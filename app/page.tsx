@@ -150,7 +150,9 @@ export default function Home() {
                       <p>Your transaction was successful.</p>
                     </div>
                     <DialogFooter>
-                      <Button onClick={() => setOpen(false)}>Close</Button>
+                      <Button onClick={() => setOpen(false)}>
+                        Perform Another Transaction
+                      </Button>
                     </DialogFooter>
                   </div>
                 ) : (
