@@ -59,7 +59,12 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { UserButton } from "@clerk/nextjs"
+import {
+  RedirectToSignIn,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs"
 import { useState } from "react"
 import { Label } from "@/components/ui/label"
 
@@ -118,7 +123,12 @@ export default function Home() {
         </Sheet>
         <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
           <form className="ml-auto flex-1 sm:flex-initial">
-            <UserButton />
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+            <SignedOut>
+              <RedirectToSignIn />
+            </SignedOut>
           </form>
         </div>
       </header>
