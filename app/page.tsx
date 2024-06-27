@@ -158,10 +158,9 @@ export default function Home() {
                 ) : (
                   <div>
                     <DialogHeader>
-                      <DialogTitle>Edit Profile</DialogTitle>
+                      <DialogTitle>Transfer Funds</DialogTitle>
                       <DialogDescription>
-                        Make changes to your profile here. Click confirm when
-                        you&apos;re done.
+                        Transfer funds between accounts
                       </DialogDescription>
                     </DialogHeader>
                     <div className="grid gap-4 py-6">
